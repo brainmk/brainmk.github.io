@@ -204,7 +204,7 @@ small {
 
 blockquote,
 blockquote p {
-    line-height: 28px;
+    line-height: 40px;
     color: #999;
     font-weight: 300;
     font-style: italic;
@@ -297,7 +297,7 @@ a:after {
 	margin-top: 90px;
 	padding-bottom: 10px;
 	font-size: 7em;
-    font-weight: bold;
+    /* font-weight: bold; */
     border: 0;
 }
 
@@ -398,6 +398,14 @@ a:after {
     text-align: center;
 }
 
+.section-divider blockquote {
+    text-align: left;
+}
+
+.divider1 .container {
+    padding-left: 200px;
+}
+
 .textdivider h1 {
 	padding-top: 70px;
 	color: white;
@@ -409,6 +417,17 @@ a:after {
 	font-size: 25px;
 }
 
+.textdivider-black h1 {
+        padding-top: 70px;
+	colos: black;
+	font-size: 40px;
+}
+
+.textdivider-black p {
+        color: black;
+	font-size: 25px;
+}
+
 
 /* Section Dividers Backgrounds */
 
@@ -417,12 +436,23 @@ a:after {
 }
 
 .divider2 {
-	background-image: url('../img/bg/divider2.jpg')
+	/*background-image: url('../img/bg/divider2.jpg');
+	background-position: 0px 50px:*/
+    background: url('../img/bg/divider2.jpg') 0px -250px no-repeat;
+    background-size: 100%;
 }
 
 .divider3 {
-	background-image: url('../img/bg/divider3.jpg');
+    background: url('../img/bg/divider3.png') no-repeat 50% 0px;
+    background-size: 100%;
+    margin-top: 0px;
+}
+@media (min-width: 768px) {
+.divider3 {
+        background: url('../img/bg/divider3.png') no-repeat 50% -5b0px;
 	margin-top: 0px;
+	background-size: 40%;
+    }
 }
 
 .divider4 {
