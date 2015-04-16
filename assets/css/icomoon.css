@@ -1990,3 +1990,7 @@
 .icon-linkedin:before {
         content: "\eac8";
 }
+
+.icon-stats:before {
+        content: "\e99b";
+}
